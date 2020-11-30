@@ -1,0 +1,252 @@
+
+ * {
+     background-color: darkgray;
+ }
+
+ body {
+     padding-top: 80px;
+ }
+
+
+.flex-grid {
+    display: flex;
+  }
+  .col {
+    flex: 1;
+  }
+
+ /* TIMER SECTION */
+
+
+.timer_box span {
+    color: darkred;
+}
+
+
+
+
+/* TIMER END */
+
+/* BUTTON STYLES */
+#start_btn button {
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+#initialsSubmitButton {
+    color: darkred;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scores_btn {
+    background-color: #fff;
+    color: darkred;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+}
+
+#viewHighScoresBtn {
+    background-color: #fff;
+    color: darkred;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+}
+
+.buttons_end {
+    color: darkred;
+    position: fixed;
+    right: 20px;
+}
+
+.buttons {
+    background-color: blue;
+}
+
+.restart {
+    color: darkred;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#initialsForm {
+    background-color: darkgray;
+}
+
+#initials {
+    color: #fff;
+    background-color: blue;
+}
+
+/* OPTION STYLES */
+.option_list {
+    background-color: blue;
+    color: darkred;
+    font-size: 20px;
+    position: center;
+    padding-top: 30%;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+.option_span {
+    font-weight: 900;
+    font-size: 22px;
+    font-family: helvetica;
+    background-color: darkgray;
+    color: white;
+    margin-left: 150px;
+    
+}
+
+.option_list {
+    cursor: pointer;
+}
+
+/* RIGHT OR WRONG OR CORRECT */
+#rightOrWrong { 
+    padding-top: 20px;
+    font-size: 30px;
+    color: darkred;
+}
+
+.correct {
+    background-color: aliceblue;
+    border: 2px solid blue;
+    display: block;
+    height: 30px;
+    font-size: 20px;
+}
+
+.wrong {
+    background-color: aliceblue;
+    border: 2px solid blue;
+    display: block;
+    height: 30px;
+    font-size: 20px;
+}
+   
+/* SHOW OR HIDE */
+.hidden {
+    display: none;
+} 
+
+.show {
+    display: block;
+}
+
+/* GROUPED STYLES */
+.start_btn,
+.info_box,
+.quiz_box,
+.result_box {
+   color: white;
+}
+
+/* INFO SECTION */
+.info_box .info_title {
+    height: 75px;
+    border: 1px solid blue;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box h3 {
+    background-color: blue;
+}
+
+.info_box {    
+    border: solid blue;
+}
+
+.info_start {
+    background-color: blue;
+}
+
+.info {
+    background-color: blue;
+}
+
+.info_list {
+    background-color: blue;
+}
+
+.info_start {
+    font-weight: 800;
+}
+
+.info_box .info_list {
+    padding: 15px 35px;
+}
+
+.info_box .info_list .info {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info_box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightgray;
+}
+
+.info_box .buttons button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid blue;
+    background-color: #fff;
+    border-radius: 5px;
+    color: darkred;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* RESULT BOX */
+#result_box {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.result_box p {
+    background-color: blue;
+    }
+    
+    #result_box span {
+        color: darkred;
+    }
+
+    
+.score_text {
+    color: white;
+    background-color: darkgray;
+    font-size: 24px;
+    
+}
+
+.complete_text {
+    background-color: darkgray;
+}
+
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="flex-grid">
+        <div class="col">
+            <header class="timer_box">
+                <p id="timer_loc" class="timer">Timer:<span id="time">75</span> Seconds remaining</p> 
+            </header>
+        </div>
+        <div class="col">
+            <div class="quiz form" id="form">
+                <h1 class="quiz title"></h1>
+                <form id="myForm" class="form"></form> <!-- Form here?-->
+                <label for="start"></label>
+
+
+                <!-- Info Box-->
+                <div id="info_box" class="info_box">
+                    <div class="info_title">
+                        <h3>Coding Quiz Challenge</h3>
+                    </div>
+                    <div class="info_list">
+                        <div class="info_start">Welcome to the Coding Quiz Challenge!</div>
+                        <div class="info">1. You will have only 75 seconds to complete the quiz.</div>
+                        <div class="info">2. If you choose the wrong answer, 5 seconds will be deducted from the timer.
+                        </div>
+                        <div class="info">3. You'll get points on the basis of your correct answers.</div>
+                        <div class="info">4. At the end of the quiz, you will be given your final score.</div>
+                        <div class="info">5. Please enter your initials at the end of the quiz to post your score
+                            ranking!</div>
+                    </div>
+                    <div class="buttons">
+                        <!-- Start quiz button-->
+                        <!-- <div class="start_btn"><button class="btn" id="save-task" type="submit">Start</button></div> -->
+
+                        <button class="start_button" id="start_btn">Start</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Box 1 -->
+            <div class="hidden" id="quiz_box1">
+                <span class="option_span">Commonly used data type do NOT include:</span>
+                <div class="option_list">
+                    <div class="option quiz_box1">
+                        <span class="wrong">arrays</span>
+                    </div>
+                    <div class="option quiz_box1">
+                        <span class="wrong">strings</span>
+                    </div>
+                    <div class="option quiz_box1">
+                        <span class="wrong">booleans</span>
+                    </div>
+                    <div class="option quiz_box1">
+                        <span class="correct">alerts</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Quiz Box 2 -->
+            <div class="hidden" id="quiz_box2">
+                <span class="option_span">The condition in an if/else statement is enclosed with:</span>
+                <div class="option_list">
+                    <div class="option quiz_box2">
+                        <span class="wrong">quotes</span>
+                    </div>
+                    <div class="option quiz_box2">
+                        <span class="correct">curly brackets</span>
+                    </div>
+                    <div class="option quiz_box2">
+                        <span class="wrong">parentheses</span>
+                    </div>
+                    <div class="option quiz_box2">
+                        <span class="wrong">square brackets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Box 3 -->
+            <div class="hidden" id="quiz_box3">
+                <span class="option_span">Arrays in JavaScipt can be used to store:</span>
+                <div class="option_list">
+                    <div class="option quiz_box3">
+                        <span class="wrong">numbers and strings</span>
+                    </div>
+                    <div class="option quiz_box3">
+                        <span class="wrong">other arrays</span>
+                    </div>
+                    <div class="option quiz_box3">
+                        <span class="wrong">booleans</span>
+                    </div>
+                    <div class="option quiz_box3">
+                        <span class="correct">all the above</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Box 4 -->
+            <div class="hidden" id="quiz_box4">
+                <span class="option_span">String values must be enclosed within __________ when being assigned to
+                    variables:</span>
+                <div class="option_list">
+                    <div class="option quiz_box4">
+                        <span class="wrong">commas</span>
+                    </div>
+                    <div class="option quiz_box4">
+                        <span class="wrong">curly brackets</span>
+                    </div>
+                    <div class="option quiz_box4">
+                        <span class="correct">quotes</span>
+                    </div>
+                    <div class="option quiz_box4">
+                        <span class="wrong">parentheses</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Box 5 -->
+            <div class="hidden" id="quiz_box5">
+                <span class="option_span"> Useful tool used during development and debugging for printing content to the
+                    page is:</span>
+                <div class="option_list">
+                    <div class="option quiz_box5">
+                        <span class="wrong">JavaScript</span>
+                    </div>
+                    <div class="option quiz_box5">
+                        <span class="wrong">terminal.bash</span>
+                    </div>
+                    <div class="option quiz_box5">
+                        <span class="wrong">for loop</span>
+                    </div>
+                    <div id="final_que" class="option quiz_box5">
+                        <span class="correct">console.log</span>
+                    </div>
+                </div>
+            </div>
+            <div id="rightOrWrong">
+            </div>
+
+            <div class="hidden" id="result_box">
+                <div class="complete_text"></div>
+                <p class="score_text">Your final score is: <span id="finalScore"></span><br />
+                    <span id="initial_box"></span>Please enter your initials:
+                <form id='initialsForm'>
+                    <input type="text" id="initials" required />
+                    <input type="submit" id="initialsSubmitButton" />
+                </form>
+                </p>
+
+                <div class="buttons_end">
+                    <button id="restart" class="restart">Replay Quiz</button> 
+                </div> 
+            </div>
+
+            <div class="hidden" id="high_scores">
+                High Scores Page
+                <table id='highScoresTable'>
+                    <tr>
+                        <th>
+                            Initials
+                        </th>
+                        <th>
+                            Score
+                        </th>
+                    </tr>
+                </table>
+                <div class="buttons_end">
+                    <button id="restart" class="restart">Replay Quiz</button> 
+                </div>
+            </div>
+
+        </div>
+        <div class="col" id="end">
+            <button class="scores_btn" id="viewHighScoresBtn">View High Scores</button>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
